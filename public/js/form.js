@@ -33,9 +33,7 @@ var Signup = function ()
                 return;
             }  
         
-        document.addEventListener('DOMContentLoaded',()=>{
-            document.getElementById('btn').addEventListener('click',addusers);
-        });    
+
     
 }
 //login
