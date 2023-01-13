@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in to Facebook </title>
+    <link rel="stylesheet" href="/css/login.css">
+    <script type="text/javascript" src="form.js" ></script>
+
+</head>
+
+<body>
+    <!--Facebook Login Page start-->
+    <div class="container">
+        <div class="icon-container">
+            <img class="icon" src="/img/Facebook.png" alt="No image found">
+        </div>
+        <!--Header section start-->
+        <div class="form-container">
+            <div class="form-title-container">
+                <p class="form-title">Log in to Facebook</p>
+            </div>
+            <!-- Input section start -->
+            <div class="form-input-container">
+                <form method="POST" id ="form" action="/">
+                    <div class="email-pass-container">
+                        <input type="email" name="email" class="email" placeholder="Email address or phone number" id="emailorphone"/>
+                        <input type="password" name="password" class="password" placeholder="Password" id="password" />
+                    </div>
+                    <!-- Login Button -->
+                    <div class="Login_button-container">
+                        <button type="submit" name="websubmit" class="button" id="btn" onclick="login()" >Log in
+                    </div>
+                    <div class="forgotten-account-container">
+                        <a href="\forgotpass" class="forgotten-account">
+                            Forgotten account?
+                        </a>
+                    </div>
+                    <!-- <div class="line"></div> -->
+                    <!-- Create New Button  -->
+                    <div class="Create-button-container" id="create-button">
+                        <button type="submit" name="websubmit" class="Create-button"> <a href="/Signup"
+                                class="create-button-text">Create New Account</a>
+                    </div>
+                    <div id="msg">
+                        <pre></pre>
+                    </div>
+                </form>
+            </div>
+            </div>
+            </div>
+            </body>
+</html>

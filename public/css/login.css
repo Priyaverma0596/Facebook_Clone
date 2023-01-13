@@ -1,0 +1,132 @@
+*
+{
+    margin: 0px; /*no space in page*/
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5;
+   font-family: sans-serif;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    height: 80px;
+    width: 160px;
+}
+.form-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-input-container {
+    background-color: white;
+    width: 432px;
+    padding: 16px;
+    border-radius: 0px 0px 8px 8px;
+
+}
+.form-title-container {
+    background-color: white;
+    width: 432px;
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 16px;
+}
+.form-title{
+    font-size: 19px;
+    line-height: 34px;
+    color: rgb(28,30,97);
+ 
+ }
+
+ .email-pass-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.email, .password {
+    
+    margin-top:  8px;
+    height: 41px;
+    padding: 11px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: -1px;
+    border: 0.5px solid black
+
+}
+
+.Login_button-container{
+    display: flex;
+    justify-content: center;
+    margin: 13px -1px;
+    
+    
+}
+.button{
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: none;
+    padding: 13px 49px;
+    width: 100%;
+}
+
+
+
+.create-button-text{
+    color:white;
+    text-decoration: none;
+  }
+
+.forgotten-account-container{
+    display: flex;
+    justify-content: center;
+    margin: 18px;
+    
+}
+.forgotten-account{
+    color: #1877f2;
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.line {
+    color: black;
+    height: 1px;
+
+}
+.Create-button-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.Create-button{
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #fff;
+    box-shadow: none;
+    padding: 16px 12px;
+    margin: 19px;
+
+}
+
