@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in to Facebook </title>
     <link rel="stylesheet" href="/css/login.css">
-    <script type="text/javascript" src="form.js" ></script>
-
+    <script async type="text/javascript" src="js/form.js"></script>
 </head>
 
 <body>
@@ -23,15 +22,19 @@
                 <p class="form-title">Log in to Facebook</p>
             </div>
             <!-- Input section start -->
-            <div class="form-input-container">
-                <form method="POST" id ="form" action="/">
-                    <div class="email-pass-container">
+            <div class="form-input-container" >
+                <form  id ="form" >
+                    <div class="email-pass-container input-control">
                         <input type="email" name="email" class="email" placeholder="Email address or phone number" id="emailorphone"/>
+                        <div class="error"></div>
                         <input type="password" name="password" class="password" placeholder="Password" id="password" />
+                        <div class="error"></div>
+
                     </div>
                     <!-- Login Button -->
                     <div class="Login_button-container">
-                        <button type="submit" name="websubmit" class="button" id="btn" onclick="login()" >Log in
+                        <button type="submit" name="websubmit" class="button" id="login-button">Log in
+                            <!-- onclick="login() -->
                     </div>
                     <div class="forgotten-account-container">
                         <a href="\forgotpass" class="forgotten-account">

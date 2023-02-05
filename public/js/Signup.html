@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup for Facebook | Facebbok</title>
     <link rel="stylesheet" href="/css/Signup.css">
-    <script type="text/javascript" src="js/form.js"></script>
+    <script async type="text/javascript" src="js/form.js"></script>
 </head>
 
 <body>
@@ -18,110 +18,131 @@
         </div>
 
         <!--input section start-->
-        <div class="form-container">
-            <div class="form-title-container">
-                <p class="form-title">Create a New account</p>
-                <p class="form-sub-title">It's quick and easy</p>
+        <form id="form">
+            <div class="form-container">
+                <div class="form-title-container">
+                    <p class="form-title">Create a New account</p>
+                    <p class="form-sub-title">It's quick and easy</p>
+                </div>
+                <div class="line"></div>
+                <div class="form-input-container">
+                    <div class="input-control">
+                        <div class="name-container input-control">
+                            <input type="text" class="name" placeholder="First name" id="firstname" name="fname"
+                                autocomplete="off" />
+                            <!-- <div class="error"></div> -->
+                            <input type="text" class="name" placeholder="Surname" id="lastname" name="lname"
+                                autocomplete="off" />
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                    <div class="email-pass-container input-control">
+                        <input type="email" name="email" class="email" placeholder="Mobile number or email address"
+                            id="emailorphone" autocomplete="off" />
+                        <div class="error"></div>
+                        <div class="input-control">
+                            <input type="password" name="password" class="password" placeholder="New password"
+                                id="password" autocomplete="off" />
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                    <div class="input-control">
+                        <p class="dob-heading">Date of birth</p>
+                        <!--date of birth section start-->
+                        <div class="dob-container">
+
+                            <select class="dob">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <select class="dob">
+                                <option value="Jan">Jan</option>
+                                <option value="Feb">Feb</option>
+                                <option value="Mar">Mar</option>
+                                <option value="Apr">Apr</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="Aug">Aug</option>
+                                <option value="Sep">Sep</option>
+                                <option value="Oct">Oct</option>
+                                <option value="Nov">Nov</option>
+                                <option value="Dec">Dec</option>
+                            </select>
+                            <select class="dob">
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                            </select>
+
+                        </div>
+                        <div class="error"></div>
+                    </div>
+                    <!--date of birth section stop-->
+                    <!--Gender section start-->
+                    <div class="input-control">
+                        <p class="gender-heading">Gender</p>
+                        <div class="gender-container" id="gender">
+                            <div class="female-container">
+                                <label for="female">Female</label>
+                                <input type="radio" name="gender" id="female" value="female" />
+                            </div>
+                            <div class="male-container">
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" value="male" />
+                            </div>
+                            <div class="custom-container">
+                                <label for="custom">Custom</label>
+                                <input type="radio" name="gender" value="custom" />
+                            </div>
+                        </div>
+                        <div class="error"></div>
+                    </div>
+                    <!--Gender section end-->
+
+                    <div class="text">
+
+                        <p class="text1">
+                            People who use our service may have uploaded your contact information to Facebook. <a
+                                href="#" class="link">Learn
+                                more</a>
+                        </p>
+                        <p class="text2">
+                            By clicking Sign Up, you agree to our <a href="" class="link">Terms Privacy Policy </a>
+                            and<a href="#" class="link"> Cookies Policy.</a>
+                        </p>
+                        <p class="text3">
+                            You may receive SMS notifications from us and can opt out at any time.
+                        </p>
+                    </div>
+
+                    <div class="button-container">
+                        <button  class="button" id="signup-button" > Sign Up
+                            <!-- / * onclick="Signup()" */ -->
+                    </div>
+                    <div class="already-an-account-container">
+                        <a href="/login" class="already-an-account">
+                            Already have an Account?
+                        </a>
+                    </div>
+                    <div id="msg">
+                        <pre></pre>
+                    </div>
+                </div>
             </div>
-            <div class="line"></div>
-            <div class="form-input-container">
-                <div class="name-container">
-                    <input type="text" class="name" placeholder="First name" id="firstname" name="fname" />
-                    <input type="text" class="name" placeholder="Surname" id="lastname" name="lname" />
-                </div>
-                <div class="email-pass-container">
-                    <input type="email" name="email" class="email" placeholder="Mobile number or email address"
-                        id="emailorphone" />
-                    <input type="password" name="password" class="password" placeholder="New password" id="password" />
-                </div>
-                <p class="dob-heading">Date of birth</p>
-                <!--date of birth section start-->
-                <div class="dob-container" id="dob">
-
-                    <select>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                    <select>
-                        <option value="">Jan</option>
-                        <option value="">Feb</option>
-                        <option value="">Mar</option>
-                        <option value="">Apr</option>
-                        <option value="">May</option>
-                        <option value="">June</option>
-                        <option value="">July</option>
-                        <option value="">Aug</option>
-                        <option value="">Sep</option>
-                        <option value="">Oct</option>
-                        <option value="">Nov</option>
-                        <option value="">Dec</option>
-                    </select>
-                    <select>
-                        <option value="">2022</option>
-                        <option value="">2021</option>
-                        <option value="">2020</option>
-                        <option value="">2019</option>
-                        <option value="">2018</option>
-                        <option value="">2017</option>
-                        <option value="">2016</option>
-                    </select>
-                </div>
-                <!--date of birth section stop-->
-                <!--Gender section start-->
-                <p class="gender-heading">Gender</p>
-                <div class="gender-container" id="gender">
-                    <div class="female-container">
-                        <label for="female">Female</label>
-                        <input type="radio" name="gender" value="female" />
-                    </div>
-                    <div class="male-container">
-                        <label for="male">Male</label>
-                        <input type="radio" name="gender" value="male" />
-                    </div>
-                    <div class="custom-container">
-                        <label for="custom">Custom</label>
-                        <input type="radio" name="gender" value="custom" />
-                    </div>
-                </div>
-                <!--Gender section end-->
-
-                <div class="text">
-
-                    <p class="text1">
-                        People who use our service may have uploaded your contact information to Facebook. <a href="#"
-                            class="link">Learn
-                            more</a>
-                    </p>
-                    <p class="text2">
-                        By clicking Sign Up, you agree to our <a href="" class="link">Terms Privacy Policy </a>
-                        and<a href="#" class="link"> Cookies Policy.</a>
-                    </p>
-                    <p class="text3">
-                        You may receive SMS notifications from us and can opt out at any time.
-                    </p>
-                </div>
-
-                <div class="button-container">
-                    <button type="submit" name="websubmit" class="button" id="btn" onclick="Signup()"> Sign Up
-                </div>
-                <div class="already-an-account-container">
-                    <a href="/login" class="already-an-account">
-                        Already have an Account?
-                    </a>
-                </div>
-                <div id="msg">
-                    <pre></pre>
-                </div>
-            </div>
-        </div>
+        </form>
     </div>
     </div>
 </body>

@@ -52,7 +52,6 @@ body {
     ;
 }
 .name-container {
-    display:flex;
     justify-content: space-between;
     
 }
@@ -162,13 +161,14 @@ select {
     
 }
 .button{
-    background-color: #00a400;
+    background-color:#00a400;
     border: none;
     border-radius: 6px;
     font-size: 18px;
     color: #fff;
     box-shadow: none;
     padding: 13px 49px;
+    cursor: pointer;
 
 
 
@@ -189,4 +189,23 @@ a:visited { text-decoration: none; }
     color: #1877f2;
     font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
     font-size: 20px;
+}
+
+.input-control input:focus{
+    outline: 0;
+
+}
+
+.input-control.success input{
+    border-color:green;
+}
+
+.input-control.error input{
+    border-color:red;
+}
+
+.input-control .error{
+    color: red;
+
+
 }

@@ -73,6 +73,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 13px -1px;
+    cursor: pointer;
     
     
 }
@@ -130,3 +131,19 @@ body {
 
 }
 
+.input-control input:focus{
+    outline: 0;
+
+}
+
+.input-control.success input{
+    border-color:green;
+}
+
+.input-control.error input{
+    border-color:red;
+}
+
+.input-control .error{
+    color: red;
+}
